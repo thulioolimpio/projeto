@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+
+    height: 100%;
+    width: 100%;
+    font-family: monospace;
+}
+#pai{
+
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    
+}
+.conteudo{
+    grid-area: 1/1/4/5;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-image: url(imagens/1215613_77.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #346375;
+    overflow: hidden;
+}
+.flecha{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #346375;
+
+}
+#sumi .flecha{
+
+    position: absolute;
+    top: 0;
+    left: 88%;
+
+    font-size: 20px;
+    padding-left: 5px;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+#sumi{
+    position: relative;
+    height: 100vh;
+    width: 40vw;
+    background-color:#8FABEB;
+    grid-area:1/1/6/4;
+    z-index: 10;
+
+    transform: translate(-100%);
+}
+.mudança #sumi{
+
+    transform: translate(0);
+    transition: 1s; 
+}
+.mudança .conteudo{
+
+    filter: blur(5px);
+    transition: 1s;
+    
+}
+.mudança .sect{
+
+    filter: blur(5px);
+    transition: 1s;
+    
+}
+.sect{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: 4/1/6/4;
+    width: 100%;
+    height: 50vh;
+    background-color: #8FABEB;
+    text-align: center;
+}
